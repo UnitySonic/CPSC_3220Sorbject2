@@ -11,7 +11,3 @@ Design:
 	The library has access to locks and signals, albeit with a rudimentary implementation. It is
 	also able to work in both cooperative and preemptive mode.
 
-Known Problems:
-	My library is rather buggy when it comes to pre-emtpive testing. I'm not sure why it's so buggy 
-	to be honest. I think the interrupts block out printf messages randomly which makes it look like
-	the program isn't working?
