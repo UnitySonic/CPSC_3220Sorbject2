@@ -1,0 +1,17 @@
+Name: Michael Merritt
+
+Description: 
+	This is a threading library that allows users to create user threads
+	that can run their own thread functions.
+
+
+Design:
+	My threading library uses a linked list data structure to keep track of all the threads.
+	This is rather slow, but ok for the purposes of getting a small scale library functional
+	The library has access to locks and signals, albeit with a rudimentary implementation. It is
+	also able to work in both cooperative and preemptive mode.
+
+Known Problems:
+	My library is rather buggy when it comes to pre-emtpive testing. I'm not sure why it's so buggy 
+	to be honest. I think the interrupts block out printf messages randomly which makes it look like
+	the program isn't working?
